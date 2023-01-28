@@ -40,7 +40,7 @@ public class Caja {
     }
 
 
-    //Metodos
+    //methods
 
     public void volumen(){
         float resultado = base * altura * profundidad;
