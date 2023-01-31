@@ -1,0 +1,35 @@
+.root{
+    -fx-background-color: #111111;
+}
+.title{
+    -fx-alignment: center;
+    -fx-font-family: sans-serif;
+    -fx-font-size: 20;
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+}
+.info{
+    -fx-font-family: sans-serif;
+    -fx-font-size: 15;
+    -fx-text-fill: white;
+}
+.button{
+    -fx-background-color: #e6e3de;
+    -fx-font-weight: bold;
+}
+.error{
+    -fx-font-family: sans-serif;
+    -fx-font-size: 20;
+    -fx-text-fill: red;
+}
+.saldo{
+    -fx-font-family: sans-serif;
+    -fx-font-size: 20;
+    -fx-text-fill: #1dff1d;
+}
+.info2{
+    -fx-font-family: sans-serif;
+    -fx-font-size: 20;
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+}

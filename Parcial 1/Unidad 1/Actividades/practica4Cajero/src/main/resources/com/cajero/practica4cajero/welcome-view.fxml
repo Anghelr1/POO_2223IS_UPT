@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="480.0" prefWidth="406.0" stylesheets="@app.css" xmlns="http://javafx.com/javafx/11.0.14-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.cajero.practica4cajero.WelcomeController">
+   <children>
+      <Button layoutX="135.0" layoutY="240.0" mnemonicParsing="false" onAction="#autentificacion" prefHeight="44.0" prefWidth="137.0" text="Ingresar" />
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="317.0" layoutY="52.0" prefHeight="68.0" prefWidth="703.0" styleClass="title" text="CAJERO ATM" textAlignment="CENTER" AnchorPane.bottomAnchor="412.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+      <TextField fx:id="numeroCuenta" layoutX="153.0" layoutY="109.0" prefHeight="25.0" prefWidth="210.0" />
+      <PasswordField fx:id="nip" layoutX="153.0" layoutY="159.0" prefHeight="25.0" prefWidth="210.0" />
+      <Label alignment="CENTER_RIGHT" contentDisplay="RIGHT" layoutX="1.0" layoutY="113.0" prefHeight="17.0" prefWidth="146.0" styleClass="info" text="Numero de cuenta:" textAlignment="RIGHT" />
+      <Label alignment="CENTER_RIGHT" contentDisplay="RIGHT" layoutY="163.0" prefHeight="17.0" prefWidth="146.0" styleClass="info" text="NIP:" textAlignment="RIGHT" />
+      <Label fx:id="labelError" alignment="CENTER" contentDisplay="CENTER" layoutX="3.0" layoutY="332.0" prefHeight="17.0" prefWidth="400.0" styleClass="error" text="Label" textAlignment="CENTER" visible="false" />
+   </children>
+</AnchorPane>

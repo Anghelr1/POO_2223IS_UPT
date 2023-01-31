@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="480.0" prefWidth="406.0" stylesheets="@app.css" xmlns="http://javafx.com/javafx/11.0.14-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.cajero.practica4cajero.CuentaDepositoController">
+
+    <children>
+        <Label fx:id="nombreCliente" alignment="CENTER" contentDisplay="CENTER" layoutX="301.0" layoutY="128.0" prefHeight="23.0" prefWidth="90.0" styleClass="info" text="nombre" textAlignment="CENTER" AnchorPane.bottomAnchor="329.0" AnchorPane.leftAnchor="301.0" AnchorPane.rightAnchor="15.0" AnchorPane.topAnchor="128.0" />
+        <ImageView fitHeight="117.0" fitWidth="129.0" layoutX="287.0" layoutY="3.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@img/man.png" />
+            </image></ImageView>
+        <Label fx:id="retiro" layoutX="35.0" layoutY="62.0" prefHeight="23.0" prefWidth="200.0" styleClass="info2" text="Deposito en efectivo">
+            <font>
+                <Font size="28.0" />
+            </font>
+        </Label>
+        <Label layoutX="35.0" layoutY="205.0" styleClass="info" text="Ingresa cantidad:" />
+        <Button fx:id="btnRetirar" layoutX="148.0" layoutY="287.0" mnemonicParsing="false" onAction="#depositar" prefHeight="52.0" prefWidth="129.0" text="Depositar" />
+        <Button fx:id="btnRegresar" layoutX="163.0" layoutY="391.0" mnemonicParsing="false" onAction="#regresar" prefHeight="40.0" prefWidth="99.0" text="Regresar" />
+        <Spinner fx:id="cantidad" editable="true" layoutX="35.0" layoutY="228.0" prefHeight="25.0" prefWidth="177.0" />
+        <Label fx:id="retiro1" layoutX="35.0" layoutY="97.0" prefHeight="17.0" prefWidth="192.0" styleClass="info2" text="Saldo actual:">
+            <font>
+                <Font size="28.0" />
+            </font>
+        </Label>
+        <Label fx:id="saldoActual" alignment="CENTER" contentDisplay="CENTER" layoutX="35.0" layoutY="128.0" prefHeight="17.0" prefWidth="192.0" styleClass="saldo" text="Saldo actual:" textAlignment="CENTER">
+            <font>
+                <Font size="28.0" />
+            </font>
+        </Label>
+    </children>
+
+</AnchorPane>

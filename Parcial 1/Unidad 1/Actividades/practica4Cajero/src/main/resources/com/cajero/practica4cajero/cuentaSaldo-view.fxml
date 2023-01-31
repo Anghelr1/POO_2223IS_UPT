@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="480.0" prefWidth="406.0" stylesheets="@app.css" xmlns="http://javafx.com/javafx/11.0.14-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.cajero.practica4cajero.CuentaSaldoController">
+   <children>
+      <Label fx:id="nombreCliente" alignment="CENTER" contentDisplay="CENTER" layoutX="301.0" layoutY="128.0" prefHeight="23.0" prefWidth="90.0" styleClass="info" text="nombre" textAlignment="CENTER" AnchorPane.bottomAnchor="329.0" AnchorPane.leftAnchor="301.0" AnchorPane.rightAnchor="15.0" AnchorPane.topAnchor="128.0" />
+      <ImageView fitHeight="117.0" fitWidth="129.0" layoutX="287.0" layoutY="3.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@img/man.png" />
+         </image></ImageView>
+      <Label layoutX="31.0" layoutY="53.0" styleClass="info" text="Saldo disponible:" />
+      <Label fx:id="saldoCliente" alignment="CENTER" contentDisplay="CENTER" layoutX="32.0" layoutY="90.0" prefHeight="23.0" prefWidth="115.0" styleClass="saldo" text="Label" textAlignment="CENTER" />
+      <Button layoutX="32.0" layoutY="193.0" mnemonicParsing="false" onAction="#regresar" prefHeight="47.0" prefWidth="115.0" text="Regresar" />
+   </children>
+</AnchorPane>
