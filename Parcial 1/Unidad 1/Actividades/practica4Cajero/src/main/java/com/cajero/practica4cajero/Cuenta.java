@@ -51,4 +51,8 @@ public class Cuenta {
     protected void setSaldo(double saldo) {
         this.saldo = saldo;
     }
+
+    protected void setNip(String nip) {
+        this.nip = nip;
+    }
 }

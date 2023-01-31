@@ -11,7 +11,7 @@
       <Button layoutX="157.0" layoutY="270.0" mnemonicParsing="false" onAction="#retiro" prefHeight="44.0" prefWidth="95.0" text="Retiro" />
       <Button layoutX="259.0" layoutY="270.0" mnemonicParsing="false" onAction="#deposito" prefHeight="44.0" prefWidth="95.0" text="Deposito" />
       <Button layoutX="110.0" layoutY="348.0" mnemonicParsing="false" prefHeight="44.0" prefWidth="95.0" text="Transferencia" />
-      <Button layoutX="212.0" layoutY="348.0" mnemonicParsing="false" prefHeight="44.0" prefWidth="95.0" text="Cambio de NIP" textAlignment="CENTER" wrapText="true" />
+      <Button layoutX="212.0" layoutY="348.0" mnemonicParsing="false" onAction="#cambioNip" prefHeight="44.0" prefWidth="95.0" text="Cambio de NIP" textAlignment="CENTER" wrapText="true" />
       <ImageView fitHeight="113.0" fitWidth="149.0" layoutX="147.0" layoutY="78.0" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@img/man.png" />

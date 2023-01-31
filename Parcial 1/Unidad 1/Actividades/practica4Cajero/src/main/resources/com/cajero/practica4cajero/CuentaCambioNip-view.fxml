@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="480.0" prefWidth="406.0" stylesheets="@app.css" xmlns="http://javafx.com/javafx/11.0.14-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.cajero.practica4cajero.CuentaCambioNipController">
+
+    <children>
+        <Label fx:id="nombreCliente" alignment="CENTER" contentDisplay="CENTER" layoutX="301.0" layoutY="128.0" prefHeight="23.0" prefWidth="90.0" styleClass="info" text="nombre" textAlignment="CENTER" AnchorPane.bottomAnchor="329.0" AnchorPane.leftAnchor="301.0" AnchorPane.rightAnchor="15.0" AnchorPane.topAnchor="128.0" />
+        <ImageView fitHeight="117.0" fitWidth="129.0" layoutX="287.0" layoutY="3.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@img/man.png" />
+            </image></ImageView>
+        <Label fx:id="retiro" layoutX="35.0" layoutY="62.0" prefHeight="23.0" prefWidth="200.0" styleClass="info2" text="Cambio de NIP">
+            <font>
+                <Font size="28.0" />
+            </font>
+        </Label>
+        <Label alignment="CENTER_RIGHT" layoutX="1.0" layoutY="209.0" prefHeight="25.0" prefWidth="168.0" styleClass="info" text="NIP Actual:" AnchorPane.bottomAnchor="246.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="238.0" AnchorPane.topAnchor="209.0" />
+        <Button layoutX="149.0" layoutY="345.0" mnemonicParsing="false" onAction="#cambioNip" prefHeight="52.0" prefWidth="129.0" text="Cambiar" />
+        <Button layoutX="164.0" layoutY="415.0" mnemonicParsing="false" onAction="#regresar" prefHeight="40.0" prefWidth="99.0" text="Regresar" />
+      <PasswordField fx:id="nipActual" alignment="CENTER" layoutX="170.0" layoutY="207.0" prefHeight="25.0" prefWidth="209.0" promptText="Ingresa tu NIP" />
+      <Label alignment="CENTER_RIGHT" layoutY="242.0" prefHeight="25.0" prefWidth="168.0" styleClass="info" text="NIP Nuevo:" />
+      <PasswordField fx:id="nipNuevo" alignment="CENTER" layoutX="170.0" layoutY="240.0" prefHeight="25.0" prefWidth="209.0" promptText="Ingresa tu NIP" />
+      <Label alignment="CENTER_RIGHT" layoutY="275.0" prefHeight="25.0" prefWidth="168.0" styleClass="info" text="Confirma NIP:" />
+      <PasswordField fx:id="nipConfirmacion" alignment="CENTER" layoutX="170.0" layoutY="273.0" prefHeight="25.0" prefWidth="209.0" promptText="Ingresa tu NIP" />
+    </children>
+
+</AnchorPane>

@@ -72,6 +72,23 @@ public class CuentaController {
         stage.show();
     }
 
+    public void cambioNip(ActionEvent event) throws IOException {
+        FXMLLoader loader = new FXMLLoader(getClass().getResource("CuentaCambioNip-view.fxml"));
+        root = loader.load();
+
+        //Enviando datos a la siguiente ventana
+        CuentaCambioNipController cuentaCambioNipController = loader.getController();
+        cuentaCambioNipController.onLoad(cuenta);
+
+        //Renderizando nueva ventana
+        stage = (Stage)((Node)event.getSource()).getScene().getWindow();
+        scene = new Scene(root);
+        stage.setScene(scene);
+        stage.show();
+    }
+
+
+
 
 
 
