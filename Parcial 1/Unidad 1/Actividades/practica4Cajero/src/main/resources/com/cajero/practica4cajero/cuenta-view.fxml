@@ -10,13 +10,14 @@
       <Button layoutX="53.0" layoutY="270.0" mnemonicParsing="false" onAction="#consultaSaldo" prefHeight="44.0" prefWidth="95.0" text="Saldo" />
       <Button layoutX="157.0" layoutY="270.0" mnemonicParsing="false" onAction="#retiro" prefHeight="44.0" prefWidth="95.0" text="Retiro" />
       <Button layoutX="259.0" layoutY="270.0" mnemonicParsing="false" onAction="#deposito" prefHeight="44.0" prefWidth="95.0" text="Deposito" />
-      <Button layoutX="110.0" layoutY="348.0" mnemonicParsing="false" prefHeight="44.0" prefWidth="95.0" text="Transferencia" />
-      <Button layoutX="212.0" layoutY="348.0" mnemonicParsing="false" onAction="#cambioNip" prefHeight="44.0" prefWidth="95.0" text="Cambio de NIP" textAlignment="CENTER" wrapText="true" />
+      <Button disable="true" layoutX="110.0" layoutY="348.0" mnemonicParsing="false" prefHeight="44.0" prefWidth="95.0" text="Transferencia" visible="false" />
+      <Button layoutX="164.0" layoutY="348.0" mnemonicParsing="false" onAction="#cambioNip" prefHeight="44.0" prefWidth="95.0" text="Cambio de NIP" textAlignment="CENTER" wrapText="true" />
       <ImageView fitHeight="113.0" fitWidth="149.0" layoutX="147.0" layoutY="78.0" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@img/man.png" />
          </image>
       </ImageView>
       <Label alignment="CENTER" contentDisplay="CENTER" layoutX="191.0" layoutY="224.0" prefHeight="30.0" prefWidth="406.0" styleClass="info" text="Selecciona una opcion:" textAlignment="CENTER" AnchorPane.bottomAnchor="226.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="224.0" />
+      <Button layoutX="160.0" layoutY="430.0" mnemonicParsing="false" onAction="#cerrarSesion" prefHeight="30.0" prefWidth="103.0" text="Cerrar Sesión" textFill="RED" />
    </children>
 </AnchorPane>

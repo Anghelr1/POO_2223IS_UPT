@@ -4,12 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9d749fb4-4907-4fc8-8808-ad344f117519" name="Changes" comment="Cajero con operaciones basicas terminados">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/cajero/practica4cajero/CuentaCambioNipController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/com/cajero/practica4cajero/CuentaCambioNip-view.fxml" afterDir="false" />
+    <list default="true" id="9d749fb4-4907-4fc8-8808-ad344f117519" name="Changes" comment="Cambio de nip terminado">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/cajero/practica4cajero/Cuentas.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/cajero/practica4cajero/Cuenta.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/cajero/practica4cajero/Cuenta.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/cajero/practica4cajero/CuentaController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/cajero/practica4cajero/CuentaController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/cajero/practica4cajero/WelcomeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/cajero/practica4cajero/WelcomeController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/com/cajero/practica4cajero/cuenta-view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/cajero/practica4cajero/cuenta-view.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -21,8 +20,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="CSS File" />
-        <option value="Class" />
         <option value="FxmlFile" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -92,7 +91,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1675109653118</updated>
-      <workItem from="1675109654187" duration="18475000" />
+      <workItem from="1675109654187" duration="20190000" />
     </task>
     <task id="LOCAL-00001" summary="Cajero con operaciones basicas terminados">
       <created>1675128998945</created>
@@ -101,7 +100,14 @@
       <option name="project" value="LOCAL" />
       <updated>1675128998945</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Cambio de nip terminado">
+      <created>1675131155320</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1675131155320</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -109,6 +115,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Cajero con operaciones basicas terminados" />
-    <option name="LAST_COMMIT_MESSAGE" value="Cajero con operaciones basicas terminados" />
+    <MESSAGE value="Cambio de nip terminado" />
+    <option name="LAST_COMMIT_MESSAGE" value="Cambio de nip terminado" />
   </component>
 </project>

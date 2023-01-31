@@ -87,6 +87,23 @@ public class CuentaController {
         stage.show();
     }
 
+    public void cerrarSesion(ActionEvent event) throws IOException {
+        FXMLLoader loader = new FXMLLoader(getClass().getResource("welcome-view.fxml"));
+        root = loader.load();
+
+        WelcomeController welcomeController = loader.getController();
+        welcomeController.actualizarInfo(cuenta);
+
+
+        //Renderizando nueva ventana
+        stage = (Stage)((Node)event.getSource()).getScene().getWindow();
+        scene = new Scene(root);
+        stage.setScene(scene);
+        stage.show();
+    }
+
+
+
 
 
 

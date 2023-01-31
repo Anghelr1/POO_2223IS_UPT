@@ -26,24 +26,25 @@ public class WelcomeController extends Cuenta {
     public TextField numeroCuenta;
     public PasswordField nip;
     public Label labelError;
+    private AtomicBoolean usuarioValido = new AtomicBoolean(false);
+    private Cuentas cuentas = new Cuentas();
+
+
 
     public void autentificacion(ActionEvent event) throws IOException {
         /*============================= TESTING =============================== */
-        numeroCuenta.setText("123456789");
-        nip.setText("1234");
+//        numeroCuenta.setText("123456789");
+//        nip.setText("1234");
         /*============================= FIN TESTING =============================== */
 
-        ArrayList<Cuenta> cuentas = new ArrayList<>();
-        cuentas.add(new Cuenta("Juan", "Perez", "Garcia", "123456789", "1234", 1000));
-        cuentas.add(new Cuenta("Maria", "Garcia", "Perez", "987654321", "4321", 2000));
 
-        AtomicBoolean usuarioValido = new AtomicBoolean(false);
-        cuentas.forEach(cuenta -> {
+
+        cuentas.getCuentas().forEach(cuenta -> {
             if (cuenta.getNumeroCuenta().equals(numeroCuenta.getText()) && cuenta.getNip().equals(nip.getText())) {
                 usuarioValido.set(true);
                 cuentaActiva = cuenta.getNumeroCuenta();
                 nipActivo = cuenta.getNip();
-                id = cuentas.indexOf(cuenta);
+                id = cuentas.getCuentas().indexOf(cuenta);
             }
         });
 
@@ -58,7 +59,7 @@ public class WelcomeController extends Cuenta {
 
             //Enviando datos a la siguiente ventana
             CuentaController cuentaController = loader.getController();
-            cuentaController.onLoad((cuentas.get(id)));
+            cuentaController.onLoad((cuentas.getCuentas().get(id)));
 
             //Renderizando nueva ventana
             stage = (Stage)((Node)event.getSource()).getScene().getWindow();
@@ -66,6 +67,17 @@ public class WelcomeController extends Cuenta {
             stage.setScene(scene);
             stage.show();
         }
+
+    }
+
+    public void actualizarInfo(Cuenta cuenta){
+
+        cuentas.getCuentas().forEach(n->{
+            if(n.getNumeroCuenta().equals(cuenta.getNumeroCuenta())){
+                n.setSaldo(cuenta.getSaldo());
+                n.setNip(cuenta.getNip());
+            }
+        });
 
     }
 
